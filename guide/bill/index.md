@@ -1,11 +1,17 @@
 # Utiliser Bill
 
+##Installation
+1. git submodule add https://github.com/shadowhand/dompdf.git vendor
+2. cd vendor && git submodule update --init
+
 ### Pour chaque produits
 * Si le prix (**price**) est précisé, il sera pris en compte dans les totaux de l'ensemble des produits.
 * Si la quantité (**quantity**) est précié, elle sera prise en compte leur du calcul des totaux.
 * Si la tva (**vat**) est précisé, elle sera prise en compte, sinon ce sera la tva par défaut précisée dans le fichier de configuration qui sera prise en compte.
 
 ### Exemple d'utilisation
+
+Dans votre controller :
 ~~~
 $dest = array(
 	'name' => 'Company Name',

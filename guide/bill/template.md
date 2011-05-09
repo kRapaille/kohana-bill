@@ -4,6 +4,14 @@ Afin d'utiliser Bill, il est nécessaire de créer au préalable un [template Tw
 
 Cependant, quelques variables/mot clefs sont spécifique à Bill et peuvent être utile lors de la création de votre template : 
 
+## Les infos
+
+Les informations se trouveront dans un array 'infos', vous pouvez donc afficher les informations comme ceci : `{{ infos[<key>] }}`
+
+## Le destinataire
+
+Les informations relatives au destinataire se trouveront dans un array 'dest', vous pouvez donc afficher les informations comme ceci : `{{ dest[<key>] }}`
+
 ## Les totaux
 - `{{ totalHTVA }}` pour le total hors TVA
 - `{{ totalTVA }}` pour le total de la TVA
